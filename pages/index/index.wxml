@@ -1,0 +1,23 @@
+<view class="page">
+	<camera device-position="front" resolution="high" frame-size="small" flash="off" binderror="error" class="camera1">
+		<canvas canvas-id="canvas1" class="canvas1"></canvas>
+	</camera>
+	<view class="btn_box">
+		<button bindtap="btnControl" class="btn" plain type="{{bool?'default':'primary'}}">{{bool?'暂停':'开始'}}</button>
+	</view>
+  
+	<view class="prop">
+		<view class="prop_box_left {{activeId==1?'active':''}}" data-id='1' bindtap="PropChose">
+			<image src="images/face.png" class="prop_img prop_face"></image>
+		</view>
+		<scroll-view scroll-x="true" class="_prop">
+			<block wx:for="{{GlassesProp}}" wx:key='id'>
+				<view class="prop_box {{activeId==item.id?'active':''}}" data-id="{{item.id}}" bindtap="PropChose">
+					<image src="{{item.src}}" class="prop_img"></image>
+				</view>
+			</block>
+		</scroll-view>
+	</view>
+
+	<canvas canvas-id="hiddenCanvas" class="hiddenCanvas"></canvas>
+</view>

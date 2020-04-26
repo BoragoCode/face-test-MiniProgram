@@ -1,0 +1,76 @@
+.page__bd{
+  padding-bottom:0;
+}
+
+.page{
+  width:100vw;
+  height:100vh;
+  overflow: hidden;
+}
+.canvas1{
+  width: 288px;
+  height: 352px;
+  z-index: 2;
+  margin:auto;
+}
+.camera1{
+  width: 288px;
+  height: 352px;
+  z-index: 1;
+  margin:auto;
+}
+
+.hiddenCanvas{
+  position:fixed;
+  left:1000px;
+  width:1000px;
+  height:1000px;
+  z-index: 1000;
+}
+.prop{
+  width:100%;
+  height: 186rpx;
+  padding-top:20rpx;
+}
+._prop{
+  width : calc( 100% - 116px );
+  height:186rpx;
+  display: block;
+  float: left;
+  white-space: nowrap;
+}
+.prop_box{
+  width:180rpx;
+  height:180rpx;
+  margin-left:20rpx;
+  margin-right: 20rpx;
+  display:inline-block;
+  border:1px solid #fff;
+}
+.prop_box_left{
+  width:180rpx;
+  height:180rpx;
+  margin-left:20rpx;
+  margin-right: 20rpx;
+  display:block;
+  float: left;
+  border:1px solid #fff;
+}
+.prop_img{
+  width:150rpx;
+  height:61rpx;
+  margin:58rpx auto;
+}
+.prop_face{
+  width:180rpx;
+  height:180rpx;
+  margin:0 auto;
+}
+.active{
+  border:1px solid greenyellow;
+  border-radius: 3px;
+}
+.btn{
+  display: block;
+  margin-top:36rpx;
+}
